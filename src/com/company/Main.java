@@ -9,8 +9,9 @@ public class Main {
         Scanner input = new Scanner(System.in);
         while (!(input.hasNextInt())) {
             System.out.println("Try again.");
-            String x = input.next();
+            input.next();
         }
         int x = input.nextInt();
+        TowersOfHanoi.solve(x, 1, 2, 3);
     }
 }
